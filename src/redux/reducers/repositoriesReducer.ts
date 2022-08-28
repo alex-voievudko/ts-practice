@@ -1,22 +1,22 @@
 import { ActionTypes } from '../action-types'
 import { Action } from '../actions'
 
-interface ReposState {
+interface RepositoriesState {
 	loading: boolean
 	error: string | null
 	data: string[]
 }
 
-const initialState: ReposState = {
+const initialState: RepositoriesState = {
 	loading: false,
 	error: null,
 	data: [],
 }
 
 const reducer = (
-	state: ReposState = initialState,
+	state: RepositoriesState = initialState,
 	action: Action,
-): ReposState => {
+): RepositoriesState => {
 	switch (action.type) {
 		case ActionTypes.SEARCH_REPOSITORIES:
 			return { loading: true, error: null, data: [] }

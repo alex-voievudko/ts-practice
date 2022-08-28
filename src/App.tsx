@@ -1,7 +1,12 @@
-import React from 'react'
+import RepositoriesList from './components/RepositoriesList'
 
 function App() {
-	return <div>Hello for app</div>
+	return (
+		<div>
+			<h1>Search for Package</h1>
+			<RepositoriesList />
+		</div>
+	)
 }
 
 export default App
